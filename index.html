@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+    <link rel="stylesheet" href="maytinh.css">
+</head>
+<body>
+<h1>Calculator</h1><br>
+<input type="text" id="number1">
+<input type="text" id="number2"><br>
+<br>
+<p>Cách làm 1: Sự kiện onclick gọi tới từng function</p>
+<button onclick="tinhtong()">Cộng</button>
+<button onclick="tinhhieu()">Trừ</button>
+<button onclick="tinhnhan()">Nhân</button>
+<button onclick="tinhchia()">Chia</button>
+<br>
+<p class="ketqua" id="result1">Kết quả</p><br>
+<br>
+<p>Cách làm 2: Mỗi lần lựa chọn option, sự kiện onclick vào ô "Tính toán" sẽ cho kết quả tương ứng.</p>
+
+<select id="pheptinh">
+    <option value="Phepcong">Cộng</option>
+    <option value="Pheptru">Trừ</option>
+    <option value="Phepnhan">Nhân</option>
+    <option value="Phepchia">Chia</option>
+</select>
+<button onclick="tinhtoan()">Tính toán</button>
+<p class="ketqua" id="result2">Kết quả</p>
+<br>
+<p>Cách làm 3: Dùng Switch Case, khớp đến đâu chạy lệnh thực hiện phép tính đến đấy.</p>
+
+<select id="tinh">
+    <option value="cong">Cộng</option>
+    <option value="tru">Trừ</option>
+    <option value="nhan">Nhân</option>
+    <option value="chia">Chia</option>
+</select>
+<button onclick="calculate()">Tính toán</button>
+<p class="ketqua" id="result3">Kết quả</p>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
